@@ -9,11 +9,11 @@ import { useAuth } from './composables/useAuth'
 const {isAuthenticated} = useAuth()
 
 const routes = [
-  { path: '/', name: 'Home', component: HomePage },
-  { path: '/other', name: 'Other', component: () => import('@/views/OtherPage.vue') },
-  { path: '/employees/:id', name: 'CardDetails', component: CardDetails },
-  { path: '/login', name: 'LoginPage', component: LoginPage },
-  { path: '/settings', name: 'SettingsPage', component: SettingsPage, meta: { requiresAuth: true } },
+  { path: '/company-directory-api/', name: 'Home', component: HomePage },
+  { path: '/company-directory-api/other', name: 'Other', component: () => import('@/views/OtherPage.vue') },
+  { path: '/company-directory-api/employees/:id', name: 'CardDetails', component: CardDetails },
+  { path: '/company-directory-api/login', name: 'LoginPage', component: LoginPage },
+  { path: '/company-directory-api/settings', name: 'SettingsPage', component: SettingsPage, meta: { requiresAuth: true } },
   
   
 
